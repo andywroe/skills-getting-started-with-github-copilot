@@ -12,9 +12,9 @@ _original_activities = copy.deepcopy(activities)
 @pytest.fixture(autouse=True)
 def reset_activities():
     """Reset the in-memory activities dict before each test."""
-    yield
     activities.clear()
     activities.update(copy.deepcopy(_original_activities))
+    yield
 
 
 @pytest.fixture
