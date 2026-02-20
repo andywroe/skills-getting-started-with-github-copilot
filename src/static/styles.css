@@ -136,6 +136,70 @@ button:hover {
   display: none;
 }
 
+.activity-card h5 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  background-color: #e8eaf6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  background-color: rgba(198, 40, 40, 0.1);
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.participant-icon {
+  font-size: 14px;
+}
+
+.no-participants {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+  margin-top: 4px;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
