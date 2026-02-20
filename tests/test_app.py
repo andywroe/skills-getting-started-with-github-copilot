@@ -21,7 +21,7 @@ def test_get_activities_returns_all(client):
 
     data = response.json()
     assert isinstance(data, dict)
-    assert len(data) == 9
+    assert len(data) == len(activities)
 
     for name, details in data.items():
         assert "description" in details
